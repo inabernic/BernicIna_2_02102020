@@ -1,0 +1,107 @@
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+#bloc_page{
+  margin: 5px
+}
+.top-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.top-header a{
+margin: 20px;
+color: #0065FC;
+padding: 10px;
+}
+
+.top-header a:hover{
+  color: black;
+  }
+
+.logo{
+  max-width: 150px;
+
+}
+
+nav:hover {
+  color: black;
+}
+
+
+.recherche{
+  padding: 9px;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  background-color: #0065FC ;
+  border-style: initial ;
+ 
+}
+
+.responsive{
+  max-width: 95%;
+  padding: 7px;
+  padding-right: 7px;
+  align-items: baseline;
+  border-radius: 7px;
+  padding-left: 4px ;
+  padding-top: 4px;
+  padding-right: 4px;
+  padding-bottom: 10px;
+}
+
+.responsive a{
+	display: flex;
+	flex-wrap: wrap-reverse;
+}
+
+#filtres{
+display: flex;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+  }
+
+.flex h4{
+    margin:20px;
+    align-items: center;
+  }
+
+footer{
+  background-color: #F2F2F2;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 33% 33% 33%;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.bas{
+justify-content: space-between;
+align-items: center;
+}
+
+.column{
+  background-color: #F2F2F2;
+  display: grid;
+  flex: 5px;
+
+ }
+
+ #populaire{
+   display: flexbox;
+   float: right;
+ }
+
+ .afficher{
+   position: relative;
+   float: left;
+ }
+
+
