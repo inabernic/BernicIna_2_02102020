@@ -2,9 +2,10 @@ body{
   font-family: 'Raleway', sans-serif;
 }
 
-#bloc_page{
+#header{
   margin: 5px
 }
+
 .top-header{
   display: flex;
   justify-content: space-between;
@@ -33,11 +34,6 @@ a.inscription{
   font-weight: bold;
  }
 
- a.accommodation{
-  border-top: solid;
-  padding-top: 30px;
- }
-
 nav:hover {
   color: black;
 }
@@ -52,6 +48,10 @@ h5{
  padding-top: 1px;
  margin-block-start: 2px;
  margin-block-end: 12px;
+}
+
+div.content{
+padding: 25px;
 }
 
 .research{
@@ -94,156 +94,208 @@ h5{
     margin-block-end: 3px;
   }
  
-
-.responsive{
-  max-width: 95%;
-  padding: 7px;
-  padding-right: 7px;
-  align-items: baseline;
-  border-radius: 7px;
-  padding-left: 4px ;
-  padding-top: 4px;
-  padding-right: 4px;
-  padding-bottom: 10px;
-}
-
-.responsive a{
-	display: flex;
-	flex-wrap: wrap-reverse;
-}
-
-#menu{
-display: flex;
-}
-
-.flex{
+  div#info{
     display: flex;
-    align-items: center;
-    padding-left: 2px;
+    flex-direction: row;
+    padding-top: 2px;
+    padding-bottom:10px;
+    margin-left: 2px;
+    }
+
+
+    .placeholder{
+      border-style: solid;
+      border-color: #F2F2F2;
+      font-weight: bold;
+      padding-left: 12px;
+      padding-right: 16px;
+    }
+    
+    ::placeholder {
+      color: black;
+    }
+    
+     .filter{
+    border: unset;
+     }
+    
+    h4{
+      border-style: solid;
+      border-color:  rgb(217, 217, 217);
+      border-radius: 20px;
+      padding-right: 15px;
+    }
+    h4.filtre{
+      padding-top: 9px;
+    }
+    
+    i.fas.fa-money-bill-wave{
+    background-color: rgb(214, 231, 255);
+    border-radius: 20px;
+    border: 12px;
+    border-color: rgb(214, 231, 255);
+    padding: 9px;
+    margin-left: unset;
+    color: #0065FC ;
+    }
+    
+    i.fas.fa-child{
+    background-color: rgb(214, 231, 255); 
+    border-radius: 20px;
+    border: 12px;
+    border-color: rgb(214, 231, 255);
+    padding: 9px;
+    margin-left: unset;
+    color: #0065FC ;
+    }
+     
+    i.fas.fa-heart{
+    background-color: rgb(214, 231, 255);
+    border-radius: 20px;
+    border: 12px;
+    border-color: rgb(214, 231, 255);
+    padding: 9px;
+    margin-left: unset;
+    color: #0065FC ;
+    }
+    
+    i.fas.fa-dog{
+     background-color: rgb(214, 231, 255);
+     border-radius: 20px;
+    border: 12px;
+    border-color: rgb(214, 231, 255);
+    padding: 9px;
+    margin-left: unset;
+    color: #0065FC ;
+    }
+
+    .flex{
+      display: flex;
+      align-items: center;
+      padding-left: 2px;
+    }
+  
+  .flex h4{
+      margin:20px;
+      align-items: center;
+      margin-left: 2px;
+    }
+  
+    div#find{
+      display: flex;
+      flex-direction: row;
+    }
+
+  
+ div.left{
+  background-color: #F2F2F2;
+  padding-bottom: 35px;
+ } 
+
+ div.right{
+  background-color: #F2F2F2;
+ }
+
+ div.end{
+background: none;
+ }
+
+  div.heading{
+    background-color: #F2F2F2;
+    border-radius: 7px;
+    padding: 18px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    justify-items: baseline;
+  }
+  div.group{
+    display: grid;
+    grid-template-columns: 66% 33% ;
+    padding: 25px;
+    background-color: white;
   }
 
-.flex h4{
-    margin:20px;
-    align-items: center;
+  div.left{
+  margin: 7px;
+  border-radius: 15px;
+  }
+
+  div.right{
+    margin:7px;
+    border-radius: 15px;
+  }
+  
+  p.Marseille{
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    padding-top: 2px;
+    padding-bottom: 10px;
     margin-left: 2px;
   }
+
+div.container{
+  background-color: white;
+  border-radius: 15px;
+  padding-left: 7px ;
+  padding-top: 7px;
+  padding-right: 7px;
+  padding-bottom: 10px;
+  display: inline-block;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-items: baseline;
+  margin: 7px;
+}
+
+div.first-line{
+display: flex;
+align-items: center;
+}
+
+div.second-line{
+  display: flex;
+  align-items: center;
+}
+
+div.item{
+  display: block flow;
+  padding: 18px;
+  font-weight: bold;
+  font-size: 17px;
+}
 
 footer{
   background-color: #F2F2F2;
   display: grid;
-  width: 100%;
-  grid-template-columns: 33% 33% 33%;
-  align-items: start;
-  justify-content: space-between;
+  grid-template-columns: 33% 33% 33% ;
+  padding: 25px;
 }
 
-div#find{
-  display: flex;
-  flex-direction: row;
+
+article.bas_page{
+display: inline-block;
+vertical-align: top;
+
 }
 
-div#info{
-display: flex;
-flex-direction: row;
-padding-top: 2px;
-padding-bottom:10px;
-margin-left: 2px;
-}
-
-.bas{
-justify-content: space-between;
-align-items: center;
-}
-
-.column{
-  background-color: #F2F2F2;
-  display: grid;
-  flex: 5px;
-
- }
-
- #populaire{
-   display: flexbox;
+ div#populaire{
    float: right;
  }
 
- .display{
-   position: relative;
-   float: left;
- }
-
-.placeholder{
-  border-style: solid;
-  border-color: #F2F2F2;
-  font-weight: bold;
-  padding-left: 12px;
-  padding-right: 16px;
-}
-
-::placeholder {
-  color: black;
-
-}
-
- .filter{
-border: unset;
- }
-
-h4{
-  border-style: solid;
-  border-color:  rgb(217, 217, 217);
-  border-radius: 20px;
-  padding-right: 15px;
-}
-h4.filtre{
-  padding-top: 9px;
-}
-
-i.fas.fa-money-bill-wave{
-background-color: rgb(214, 231, 255);
-border-radius: 20px;
-border: 12px;
-border-color: rgb(214, 231, 255);
-padding: 9px;
-margin-left: unset;
-color: #0065FC ;
-}
-
-i.fas.fa-child{
-background-color: rgb(214, 231, 255); 
-border-radius: 20px;
-border: 12px;
-border-color: rgb(214, 231, 255);
-padding: 9px;
-margin-left: unset;
-color: #0065FC ;
-}
- 
-i.fas.fa-heart{
-background-color: rgb(214, 231, 255);
-border-radius: 20px;
-border: 12px;
-border-color: rgb(214, 231, 255);
-padding: 9px;
-margin-left: unset;
-color: #0065FC ;
-}
-
-i.fas.fa-dog{
- background-color: rgb(214, 231, 255);
- border-radius: 20px;
-border: 12px;
-border-color: rgb(214, 231, 255);
-padding: 9px;
-margin-left: unset;
-color: #0065FC ;
-}
 
 img{
-  max-width: 100%;
-  height: auto;
+  height: 150px;
+  width: 100% ;
+  vertical-align: middle;
   padding-bottom: 20px;
-  display: flex;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  display: inline;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
+
+ p.heber{
+   padding: 18px;
+   font-weight: bold;
+   font-size: 20px;
+ }
