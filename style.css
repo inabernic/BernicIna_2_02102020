@@ -38,12 +38,14 @@ nav:hover {
   color: black;
 }
 
-h3{
+.title {
+  color: black;
 padding-bottom: 2px;
 margin-block-end: 2px;
+font-weight: bold;
 }
 
-h5{
+.sous-title {
  color: gray;
  padding-top: 1px;
  margin-block-start: 2px;
@@ -265,18 +267,25 @@ div.item{
   font-size: 17px;
 }
 
-footer{
+footer {
   background-color: #F2F2F2;
-  display: grid;
-  grid-template-columns: 33% 33% 33% ;
   padding: 25px;
+  
 }
 
+.footer-navigation {
+display: flex;
+flex-wrap: wrap;
 
-article.bas_page{
-display: inline-block;
-vertical-align: top;
+}
 
+.services{
+
+
+}
+
+.services h2 {
+font-weight: bold;
 }
 
  div#populaire{
