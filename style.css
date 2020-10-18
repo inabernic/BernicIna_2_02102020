@@ -1,16 +1,25 @@
+:root {
+  --white: #ffffff;
+  --bleu: #0065FC;
+  --bleu-light: #DEEBFF;
+  --grey: #F2F2F2; 
+}
+
+
 body{
   font-family: 'Raleway', sans-serif;
 }
 
 #header{
-  margin: 5px
+padding-bottom: 15px;
+
 }
 
 .top-header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  padding-left: 25px;
 }
 
 .top-header a{
@@ -24,36 +33,49 @@ padding: 10px;
   }
 
 .logo{
-  max-width: 150px;
+  max-width: 100px;
 }
  nav a{
    text-decoration: none;
- 
  }
 a.inscription{
   font-weight: bold;
+ }
+  .activites{
+  text-decoration-color: black;
+  font-weight: bold;
+  padding-left: 40px;
+  }
+
+ a.accommodation{
+font-weight: bold;
+border-top: solid;
+padding-top: 40px;
  }
 
 nav:hover {
   color: black;
 }
 
-.title {
-  color: black;
-padding-bottom: 2px;
-margin-block-end: 2px;
+.titre {
+color: black;
 font-weight: bold;
+font-size: 1.5em;
+padding-left: 25px;
+padding-bottom: unset;
 }
 
-.sous-title {
+.s-titre {
  color: gray;
- padding-top: 1px;
- margin-block-start: 2px;
- margin-block-end: 12px;
+ padding-left: 25px;
+ padding-top: unset;
+ padding-bottom: 4px;
+ font-size: 1em;
 }
 
 div.content{
-padding: 25px;
+padding-left: 25px;
+padding-top: 50px;
 }
 
 .research{
@@ -65,6 +87,7 @@ padding: 25px;
   border-top-right-radius: 7px ;
   border-bottom-right-radius: 7px ;
   font-weight: bold;
+  font-size: 1.0em;
 }
 
   i.fas.fa-map-marker-alt{
@@ -99,9 +122,7 @@ padding: 25px;
   div#info{
     display: flex;
     flex-direction: row;
-    padding-top: 2px;
-    padding-bottom:10px;
-    margin-left: 2px;
+    padding-left: 25px;
     }
 
 
@@ -111,23 +132,31 @@ padding: 25px;
       font-weight: bold;
       padding-left: 12px;
       padding-right: 16px;
+      font-size: 1.0em;
     }
     
     ::placeholder {
       color: black;
     }
+
+    #menu{
+      padding-left: 25px;
+      font-size: 1.0em;
+      font-weight: bold;
+    }
     
      .filter{
     border: unset;
+    font-size: 1.0em;
      }
     
-    h4{
+    h{
       border-style: solid;
       border-color:  rgb(217, 217, 217);
       border-radius: 20px;
       padding-right: 15px;
     }
-    h4.filtre{
+    h.filtre{
       padding-top: 9px;
     }
     
@@ -171,61 +200,67 @@ padding: 25px;
     color: #0065FC ;
     }
 
-    .flex{
+    .container-flex{
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
-      padding-left: 2px;
+      padding-right: 10px;
     }
   
-  .flex h4{
+  .flex h{
       margin:20px;
       align-items: center;
-      margin-left: 2px;
     }
   
     div#find{
       display: flex;
       flex-direction: row;
+      padding-left: 25px;
+      font-size: 1.0em;
     }
 
   
- div.left{
+ div.Hebergement{
   background-color: #F2F2F2;
-  padding-bottom: 35px;
+  padding: 15px;
+  padding-bottom: 30px;
+  margin: 7px;
+  border-radius: 15px;
  } 
 
- div.right{
-  background-color: #F2F2F2;
+ i.fas.fa-star{
+color: var(--bleu);
  }
 
- div.end{
-background: none;
+ p.fas.fa-star{
+  color: var(--grey);
+   }
+
+ p.heber{
+  padding: 9px;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: unset;
+
+}
+ div.Plus-Pop{
+  background-color: #F2F2F2;
+  margin:7px;
+  border-radius: 15px;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
  }
 
   div.heading{
     background-color: #F2F2F2;
-    border-radius: 7px;
+    border-radius: 15px;
+    padding-top: unset;
     padding: 18px;
-    padding-bottom: 10px;
     box-sizing: border-box;
     justify-items: baseline;
   }
-  div.group{
-    display: grid;
-    grid-template-columns: 66% 33% ;
-    padding: 25px;
-    background-color: white;
-  }
 
-  div.left{
-  margin: 7px;
-  border-radius: 15px;
-  }
-
-  div.right{
-    margin:7px;
-    border-radius: 15px;
-  }
   
   p.Marseille{
     font-weight: bold;
@@ -247,12 +282,39 @@ div.container{
   box-sizing: border-box;
   flex-wrap: wrap;
   justify-items: baseline;
-  margin: 7px;
+  margin: 20px;
 }
 
+div.container2{
+  background-color: white;
+  border-radius: 15px;
+  padding-left: 7px ;
+  padding-top: 7px;
+  padding-right: 10px;
+  padding-bottom: 7px;
+  display: flex;
+  box-sizing: border-box;
+  justify-items: baseline;
+  margin: 20px;
+}
+div.container2 div.nom{
+  font-weight: bold;
+}
+
+
+
+div.container2 a img{
+  width: 175px; 
+  height: 175px;
+  padding-right: 20px;
+  display: inline;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
 div.first-line{
 display: flex;
 align-items: center;
+padding-top: unset;
 }
 
 div.second-line{
@@ -261,8 +323,7 @@ div.second-line{
 }
 
 div.item{
-  display: block flow;
-  padding: 18px;
+  padding: 40px;
   font-weight: bold;
   font-size: 17px;
 }
@@ -270,32 +331,35 @@ div.item{
 footer {
   background-color: #F2F2F2;
   padding: 25px;
-  
 }
 
 .footer-navigation {
-display: flex;
-flex-wrap: wrap;
-
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
+footer ul {
+  list-style: none;
+}
 .services{
-
-
+  padding: 7px;
 }
 
 .services h2 {
 font-weight: bold;
+font-size: 1.2em;
 }
 
- div#populaire{
-   float: right;
- }
-
-
-img{
-  height: 150px;
-  width: 100% ;
+li{
+  padding: 4px;
+}
+.container img{
+  width: 200px; 
+  height: 100px; 
+  object-fit: cover; 
   vertical-align: middle;
   padding-bottom: 20px;
   display: inline;
@@ -303,8 +367,4 @@ img{
   border-top-right-radius: 15px;
 }
 
- p.heber{
-   padding: 18px;
-   font-weight: bold;
-   font-size: 20px;
- }
+ 
