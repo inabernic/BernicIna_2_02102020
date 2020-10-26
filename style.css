@@ -16,9 +16,7 @@ body {
 .wrapper{
 box-sizing: border-box;
 width: 100%;
-border: solid #5B6DCD 10px;
-padding: 5px;
-max-width: 1400px;
+max-width: 1500px;
 margin: 0 auto;
 }
 
@@ -244,24 +242,24 @@ i.fas.fa-info {
 **************************/
 
 main{
-  border: solid red 2px;
   display: flex;
-  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
   justify-content: space-between;
+}
+
+aside{
+  min-width: 360px;
+  width: 30%;
 }
 
 .group {
   background-color: #F2F2F2;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-right: 7px;
   border-radius: 15px;
-  border: solid green 2px;
 }
 
 i.fas.fa-star {
   color: var(--bleu);
-  border: solid red 4px;
   margin-block-start: unset;
   margin-block-end: unset;
   font-size: 13px;
@@ -269,7 +267,6 @@ i.fas.fa-star {
 
 p.fas.fa-star {
   color: var(--grey);
-  border: solid black 4px;
   margin-block-start: unset;
   margin-block-end: unset;
   font-size: 13px;
@@ -281,12 +278,10 @@ padding-left: 12px;
  }
 
 .main-title-container1{
-  border: solid red 4px;
   font-weight: bold;
 }
 
 .main-title-container2{
-  border: solid red 4px;
   font-weight: bold;
 }
 
@@ -301,11 +296,9 @@ i.fas.fa-chart-line {
 .main-container1 {
   box-sizing: border-box;
   justify-items: baseline;
-  border: solid gold 1px;
 }
 
 .main-container2{
-  border: solid gold 1px;
   display: flex;
   justify-content: space-between;
 }
@@ -324,7 +317,6 @@ p.Marseille {
 }
 
 .container {
-  background-color: white;
   border-radius: 25px;
   padding-left: 5px;
   padding-top: 5px;
@@ -334,13 +326,11 @@ p.Marseille {
   box-sizing: border-box;
   flex-wrap: wrap;
   justify-items: baseline;
-  border: solid gold 1px;
   margin-right: 20px;
   box-shadow: 0.2px 7px 30px gray;
 }
 
 .container2 {
-  background-color: white;
   border-radius: 25px;
   padding-left: 5px;
   padding-top: 5px;
@@ -377,7 +367,6 @@ p.Marseille {
 }
 
 .container2 a img {
-  width: 145px;
   height: 135px;
   display: inline;
   border-top-left-radius: 15px;
@@ -387,13 +376,11 @@ p.Marseille {
 .first-line {
   display: flex;
   align-items: center;
-  border: solid red 4px;
 }
 
 .second-line {
   display: flex;
     align-items: center;
-    border: solid red 4px;
     margin-top: 20px;
 }
 
@@ -401,12 +388,9 @@ p.Marseille {
   padding-top: 35px;
   padding-bottom: 35px;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 1.5em;
 }
  
-.bloc-container3{
-  border: solid red 4px;
-}
 
 .location-name-price-container2{
   padding-left: 9px;
@@ -418,43 +402,88 @@ p.Marseille {
 /*************************
          block activites a Marseille
 **************************/
-.bloc-container3{
-  border: solid red 4px;
-}
-
-.container3 img{
-  padding-bottom: 25px;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
- 
-}
-
-section{
-  padding-top: 40px;
-}
 
 .container3{
-  border: solid red 4px;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
-  box-shadow: 0.5px 7px 30px gray;
-
 }
 
 .item-container3{
-  border: solid greenyellow 3px;
-  border-radius: 35px;
- 
-}
-.item0-container3{
-  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-width: 23%;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
-.item-container3.vertical{
-  border: solid black 4px;
+.sub-item-container3{
+  min-width: 350px;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0.1px 2px 8px lightgray;
+}
+
+.item-container3 .name{
+  margin-left: 5%;
+  height: 25px;
+  line-height: 70px;
+}
+
+.even_container{
+  min-height: 150px;
+  height: 100%;
+  margin-bottom: 10px;
+  padding-bottom: 60px;
+}
+
+.even_container .name{
+  padding-top: 20px;
+  line-height: 25px;
+}
+
+.odd_container{
+  min-height: 215px;
+  margin-bottom: 10px;
+}
+
+.odd_container .name{
+  padding-top: 0px;
+}
+
+.even{
+  height: 95%;
+}
+
+.odd{
+  min-height: 136px;
+}
+
+.sub-item1-container3{
+  background: url(/images/activites/4_small/activ-Marseille-vieux-port.jpg) no-repeat center;
+}
+
+.sub-item2-container3{
+  background: url(/images/activites/4_small/Activ-Marseille-Fort.jpg) no-repeat center;
+}
+
+.sub-item3-container3{
+  background: url(/images/activites/4_small/Activ-Marseille-iles.jpg) no-repeat center;
+}
+
+.sub-item4-container3{
+  background: url(/images/activites/4_small/Activ-Marseille-parc.jpg) no-repeat center;
+}
+
+.sub-item5-container3{
+  background: url(/images/activites/4_small/Activ-Marseille-NotreDame.jpg) no-repeat center;
+}
+
+.sub-item6-container3{
+  background: url(/images/activites/4_small/Activ-Marseille-ParcLongchamp.jpg) no-repeat center;
 }
 
 .item1-container3{
@@ -463,46 +492,28 @@ section{
   padding-bottom: 30px;
 }
 
-.item-container3 img{
-  width: 175px;
-  height: 175px;
-  align-content: stretch;
-}
-
 .item2-container3{
   border: solid brown 2px;
   border-radius: 35px;
   padding-bottom: 30px;
 }
 
-.container3 img{
-box-sizing: border-box;
-width: 100%;
-padding-top: 15px;
-border-top-left-radius: 35px;
-    border-top-right-radius: 35px;
-}
 
 /*************************
          footer
 **************************/
 footer {
   background-color: #F2F2F2;
-  border: solid black 4px;
-  padding: 15px; 
   max-width: 1600px;
-margin: 0 auto;
+  margin: 0 auto;
 }
 
 .footer-navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-content: space-between;
   box-sizing: border-box;
   width: 75%;
-  padding-left: 60px;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 footer ul {
@@ -521,32 +532,4 @@ footer ul {
 
 li {
   padding: 4px;
-}
-
-/***************************
-  Media Queries
-*****************************/
-@media (min-width: 700px) {
-  .container-flex {
-    flex-direction: row;
-  }
-}
-
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px){
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px){
-  .responsive {
-    width: 100%;
-  }
 }
