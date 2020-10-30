@@ -16,8 +16,9 @@ body {
 .wrapper{
 box-sizing: border-box;
 width: 100%;
-max-width: 1500px;
+max-width: 1400px;
 margin: 0 auto;
+border: 0.5px solid red;
 }
 
 .top-header {
@@ -463,27 +464,27 @@ p.Marseille {
 }
 
 .sub-item1-container3{
-  background: url(/images/activites/4_small/activ-Marseille-vieux-port.jpg) no-repeat center;
+  background: url(images/activites/4_small/activ-Marseille-vieux-port.jpg) no-repeat center;
 }
 
 .sub-item2-container3{
-  background: url(/images/activites/4_small/Activ-Marseille-Fort.jpg) no-repeat center;
+  background: url(images/activites/4_small/activ-Marseille-Fort.jpg) no-repeat center;
 }
 
 .sub-item3-container3{
-  background: url(/images/activites/4_small/Activ-Marseille-iles.jpg) no-repeat center;
+  background: url(images/activites/4_small/activ-Marseille-iles.jpg) no-repeat center;
 }
 
 .sub-item4-container3{
-  background: url(/images/activites/4_small/Activ-Marseille-parc.jpg) no-repeat center;
+  background: url(images/activites/4_small/activ-Marseille-parc.jpg) no-repeat center;
 }
 
 .sub-item5-container3{
-  background: url(/images/activites/4_small/Activ-Marseille-NotreDame.jpg) no-repeat center;
+  background: url(images/activites/4_small/activ-Marseille-NotreDame.jpg) no-repeat center;
 }
 
 .sub-item6-container3{
-  background: url(/images/activites/4_small/Activ-Marseille-ParcLongchamp.jpg) no-repeat center;
+  background: url(images/activites/4_small/activ-Marseille-ParcLongchamp.jpg) no-repeat center;
 }
 
 .item1-container3{
@@ -504,7 +505,7 @@ p.Marseille {
 **************************/
 footer {
   background-color: #F2F2F2;
-  max-width: 1600px;
+
   margin: 0 auto;
 }
 
@@ -530,6 +531,6 @@ footer ul {
   padding-left: 42px;
 }
 
-li {
+.services li {
   padding: 4px;
 }
