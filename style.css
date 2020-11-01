@@ -10,64 +10,72 @@ body {
   margin: 0px;
 }
 
+.body-out-footer {
+  box-sizing: border-box;
+  max-width: 1600px;
+  margin: 0 auto;
+  min-width: 375px;
+}
+
 /*************************
          nav
 **************************/
-.wrapper{
-box-sizing: border-box;
-width: 100%;
-max-width: 1400px;
-margin: 0 auto;
-border: 0.5px solid red;
-}
 
 .top-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  background: url(images/logo/Reservia@3x.png) no-repeat ;
+  background-size: 150px;
+  height: 100px;
 }
 
-.top-header a {
-  margin-left: 20px;
-  color: #0065FC;
+.top-header a{
+  padding: 20px;
 }
 
-.top-header a:hover {
-  color: black;
-}
 
-h1{
+h1 {
   margin-block-end: unset;
 }
 
-.logo img{
-  width: 110px;
-  height: 50px;
+
+.menu-link {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: flex-start;
+  width: 80%;
+  min-width: 375px;
 }
 
-.menu-link{
-  padding-top: 50px;
+
+.menu-nav {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  min-width: 260px;
+  justify-content: space-evenly;
 }
 
-nav a {
-  text-decoration: none;
-  
-}
-
-a.inscription {
+.inscription {
   font-weight: bold;
+  color: #0065FC;
+  width: 5%;
+  min-width: 80px;
+  text-align: right;
+}
+
+.accommodation {
+  font-weight: bold;
+  color: #0065FC;
+
 }
 
 .activites {
   text-decoration-color: black;
   font-weight: bold;
-}
-
-a.accommodation {
-  font-weight: bold;
-  border-top: solid;
-  padding-top: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  color: black;
 }
 
 nav:hover {
@@ -78,7 +86,7 @@ nav:hover {
          Titre, Recherche
 **************************/
 
-h2{
+h2 {
   color: black;
   font-weight: bold;
 }
@@ -207,20 +215,20 @@ i.fas.fa-dog {
 /*************************
          SEARCH-INFO
 **************************/
-.search-info{
+.search-info {
   display: flex;
   flex-wrap: nowrap;
   margin-top: 1rem;
- margin-bottom: 2px;
+  margin-bottom: 2px;
 }
 
-.icon-info{
-flex-flow: row;
-border-radius: 17px;
-width: 20px;
-height: 20px;
-border: solid gray 2px;
-margin-top: 12px;
+.icon-info {
+  flex-flow: row;
+  border-radius: 17px;
+  width: 20px;
+  height: 20px;
+  border: solid gray 2px;
+  margin-top: 12px;
 
 }
 
@@ -232,7 +240,7 @@ i.fas.fa-info {
   font-size: 14px;
 }
 
-.search-info p{
+.search-info p {
 
   padding-left: 7px;
 }
@@ -242,21 +250,32 @@ i.fas.fa-info {
          block ebergement + les plus populaires
 **************************/
 
-main{
+main {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-aside{
-  min-width: 360px;
+aside {
+  padding: 5px;
+  min-width: 375px;
   width: 30%;
+  display: flex;
+  flex-direction: column;
 }
 
 .group {
   background-color: #F2F2F2;
   border-radius: 15px;
+  min-width: 330px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.group-left {
+  width: 60%;
 }
 
 i.fas.fa-star {
@@ -273,20 +292,20 @@ p.fas.fa-star {
   font-size: 13px;
 }
 
- .bloc-stars{
-padding-left: 12px;
+.bloc-stars {
+  padding-left: 12px;
 
- }
+}
 
-.main-title-container1{
+.main-title-container1 {
   font-weight: bold;
 }
 
-.main-title-container2{
+.main-title-container2 {
   font-weight: bold;
 }
 
-.chart{
+.chart {
   display: flex;
 }
 
@@ -299,15 +318,16 @@ i.fas.fa-chart-line {
   justify-items: baseline;
 }
 
-.main-container2{
+.main-container2 {
   display: flex;
   justify-content: space-between;
 }
 
-i.fas.fa-chart-line{
+i.fas.fa-chart-line {
   padding-top: 20px;
   font-size: 2em;
 }
+
 p.Marseille {
   font-weight: bold;
   display: flex;
@@ -326,9 +346,11 @@ p.Marseille {
   display: inline-block;
   box-sizing: border-box;
   flex-wrap: wrap;
-  justify-items: baseline;
-  margin-right: 20px;
   box-shadow: 0.2px 7px 30px gray;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 30%;
+  min-width: 280px;
 }
 
 .container2 {
@@ -340,8 +362,9 @@ p.Marseille {
   display: flex;
   box-sizing: border-box;
   justify-items: baseline;
-  margin-bottom: 30px;
   box-shadow: 0.2px 7px 30px gray;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .name {
@@ -357,8 +380,8 @@ p.Marseille {
 }
 
 .container img {
-  width: 240px;
-  height: 109px;
+  width: 100%;
+  height: 140px;
   object-fit: cover;
   vertical-align: middle;
   padding-bottom: 10px;
@@ -368,7 +391,11 @@ p.Marseille {
 }
 
 .container2 a img {
-  height: 135px;
+  width: 140px;
+  height: 170px;
+  display: inline;
+  object-fit: cover;
+  vertical-align: middle;
   display: inline;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -376,25 +403,25 @@ p.Marseille {
 
 .first-line {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .second-line {
   display: flex;
-    align-items: center;
-    margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .item {
-  padding-top: 35px;
-  padding-bottom: 35px;
+  height: 80px;
+  line-height: 80px;
   font-weight: bold;
   font-size: 1.5em;
 }
- 
 
-.location-name-price-container2{
-  padding-left: 9px;
+
+.location-name-price-container2 {
   padding-top: 10px;
   padding-right: 40px;
   padding-bottom: 30px;
@@ -404,108 +431,108 @@ p.Marseille {
          block activites a Marseille
 **************************/
 
-.container3{
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.main-title-container {
+  width: 100%;
+}
+
+.container3 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.item-container3{
+.item-container3 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  min-width: 23%;
   border-radius: 15px;
   overflow: hidden;
-  margin: 0 auto;
 }
 
-.sub-item-container3{
-  min-width: 350px;
+.sub-item-container3 {
+  width: 100%;
   border-radius: 25px;
   overflow: hidden;
   box-shadow: 0.1px 2px 8px lightgray;
 }
 
-.item-container3 .name{
-  margin-left: 5%;
+
+
+.item-container3 .name {
   height: 25px;
   line-height: 70px;
+  min-width: 340px;
 }
 
-.even_container{
+.even_container {
   min-height: 150px;
   height: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   padding-bottom: 60px;
 }
 
-.even_container .name{
+.even_container .name {
   padding-top: 20px;
   line-height: 25px;
 }
 
-.odd_container{
+.odd_container {
   min-height: 215px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
-.odd_container .name{
+.odd_container .name {
   padding-top: 0px;
 }
 
-.even{
+.even {
   height: 95%;
 }
 
-.odd{
-  min-height: 136px;
+.odd {
+  min-height: 140px;
 }
 
-.sub-item1-container3{
+.sub-item1-container3 {
   background: url(images/activites/4_small/activ-Marseille-vieux-port.jpg) no-repeat center;
 }
 
-.sub-item2-container3{
+.sub-item2-container3 {
   background: url(images/activites/4_small/activ-Marseille-Fort.jpg) no-repeat center;
 }
 
-.sub-item3-container3{
+.sub-item3-container3 {
   background: url(images/activites/4_small/activ-Marseille-iles.jpg) no-repeat center;
 }
 
-.sub-item4-container3{
+.sub-item4-container3 {
   background: url(images/activites/4_small/activ-Marseille-parc.jpg) no-repeat center;
 }
 
-.sub-item5-container3{
+.sub-item5-container3 {
   background: url(images/activites/4_small/activ-Marseille-NotreDame.jpg) no-repeat center;
 }
 
-.sub-item6-container3{
+.sub-item6-container3 {
   background: url(images/activites/4_small/activ-Marseille-ParcLongchamp.jpg) no-repeat center;
 }
-
-.item1-container3{
-  border: solid blue 2px;
-  border-radius: 35px;
-  padding-bottom: 30px;
-}
-
-.item2-container3{
-  border: solid brown 2px;
-  border-radius: 35px;
-  padding-bottom: 30px;
-}
-
 
 /*************************
          footer
 **************************/
 footer {
   background-color: #F2F2F2;
-
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 375px;
+  max-width: 1700px;
   margin: 0 auto;
 }
 
@@ -533,4 +560,35 @@ footer ul {
 
 .services li {
   padding: 4px;
+}
+
+
+/* Nouvelles règles si la fenêtre fait au plus 1024px de large */
+@media screen and (max-width: 1024px) {
+  .container3 {
+    justify-content: space-evenly;
+  }
+
+  .first-line{
+    justify-content: center;
+  }
+
+  .second-line{
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .menu-nav {
+    min-width: 375px;
+  }
+
+  .inscription{
+    min-width: 375px;
+    margin-top: 30px;
+  }
+
+  .container{
+    width: 100%;
+  }
 }
