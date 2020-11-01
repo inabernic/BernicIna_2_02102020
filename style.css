@@ -564,17 +564,17 @@ footer ul {
 
 
 /* Nouvelles règles si la fenêtre fait au plus 1024px de large */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1400px) {
   .container3 {
     justify-content: space-evenly;
   }
 
   .first-line{
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   .second-line{
-    justify-content: center;
+    justify-content: space-evenly;
   }
 }
 
