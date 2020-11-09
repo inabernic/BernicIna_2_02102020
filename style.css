@@ -1,5 +1,4 @@
 :root {
-  --white: #ffffff;
   --bleu: #0065FC;
   --bleu-light: #DEEBFF;
   --gray: rgb(211, 211, 211);
@@ -38,9 +37,6 @@ body {
   text-decoration: none
 }
 
-h1 {
-  margin-block-end: unset;
-}
 
 .menu-link {
   display: flex;
@@ -63,7 +59,7 @@ h1 {
 
 .inscription {
   font-weight: bold;
-  color: #0065FC;
+  color: var(--bleu);
   width: 5%;
   min-width: 80px;
   text-align: right;
@@ -71,7 +67,7 @@ h1 {
 
 .accommodation {
   font-weight: bold;
-  color: #0065FC;
+  color: var(--bleu);
   border-top-style: solid;
 }
 
@@ -97,7 +93,6 @@ h2 {
   padding-top: unset;
   padding-bottom: 8px;
   font-size: 1em;
-  margin-block-start: 0.6rem;
 }
 
 #find {
@@ -111,7 +106,7 @@ h2 {
   padding: 9px;
   text-align: center;
   color: white;
-  background-color: #0065FC;
+  background-color:  var(--bleu);
   border-style: initial;
   border-top-right-radius: 18px;
   border-bottom-right-radius: 18px;
@@ -163,7 +158,7 @@ i.fas.fa-map-marker-alt {
 }
 
 .filter:hover {
-  background-color: #DEEBFF;
+  color: var(--bleu-light);
 }
 
 .filter {
@@ -177,40 +172,36 @@ i.fas.fa-money-bill-wave {
   background-color: rgb(214, 231, 255);
   border-radius: 20px;
   border: 12px;
-  border-color: rgb(214, 231, 255);
   padding: 9px;
   margin-left: unset;
-  color: #0065FC;
+  color: var(--bleu);
 }
 
 i.fas.fa-child {
   background-color: rgb(214, 231, 255);
   border-radius: 20px;
   border: 12px;
-  border-color: rgb(214, 231, 255);
-  padding: 9px;
+  padding: 10px;
   margin-left: unset;
-  color: #0065FC;
+  color: var(--bleu);
 }
 
 i.fas.fa-heart {
   background-color: rgb(214, 231, 255);
   border-radius: 20px;
   border: 12px;
-  border-color: rgb(214, 231, 255);
   padding: 9px;
   margin-left: unset;
-  color: #0065FC;
+  color: var(--bleu);
 }
 
 i.fas.fa-dog {
   background-color: rgb(214, 231, 255);
   border-radius: 20px;
   border: 12px;
-  border-color: rgb(214, 231, 255);
   padding: 9px;
   margin-left: unset;
-  color: #0065FC;
+  color: var(--bleu);
 }
 
 .container-flex {
@@ -241,7 +232,7 @@ i.fas.fa-dog {
 }
 
 i.fas.fa-info {
-  color: #0065FC;
+  color: var(--bleu);
   box-sizing: border-box;
   padding-left: 7px;
   padding-top: 3px;
@@ -261,12 +252,13 @@ main {
   flex-wrap: wrap;
   flex-direction: row-reverse;
   justify-content: space-around;
+  cursor:pointer;
 }
 
 aside {
   padding: 5px;
   min-width: 375px;
-  width: 30%;
+  width: 24%;
   display: flex;
   flex-direction: column;
 }
@@ -275,32 +267,34 @@ aside {
   background-color: #F2F2F2;
   border-radius: 15px;
   min-width: 330px;
-  padding: 20px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
 }
 
 .group-left {
-  width: 60%;
+  width: 64%;
 }
+
 
 i.fas.fa-star {
   color: var(--bleu);
-  margin-block-start: unset;
-  margin-block-end: unset;
   font-size: 13px;
 }
 
 p.fas.fa-star {
   color: var(--gray);
+  font-size: 13px;
   margin-block-start: unset;
   margin-block-end: unset;
-  font-size: 13px;
 }
 
 .bloc-stars {
   padding-left: 12px;
 }
+ .star{
+   padding-top: 10px;
+ }
 
 .main-title-container1 {
   font-weight: bold;
@@ -315,7 +309,7 @@ p.fas.fa-star {
 }
 
 i.fas.fa-chart-line {
-  align-self: right;
+  align-self: baseline;
 }
 
 .main-container1 {
@@ -381,7 +375,7 @@ p.Marseille {
 
 .price {
   padding-left: 12px;
-  padding-bottom: 7px;
+  padding-bottom: 12px;
 }
 
 .container img {
@@ -397,7 +391,7 @@ p.Marseille {
 
 .container2 a img {
   width: 140px;
-  height: 170px;
+  height: 187px;
   display: inline;
   object-fit: cover;
   vertical-align: middle;
@@ -427,9 +421,9 @@ p.Marseille {
 
 
 .location-name-price-container2 {
-  padding-top: 10px;
-  padding-right: 40px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-right: 35px;
+  padding-bottom: 50px;
 }
 
 /*************************
@@ -440,6 +434,7 @@ p.Marseille {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  cursor:pointer;
 }
 
 .main-title-container {
@@ -467,7 +462,6 @@ p.Marseille {
   overflow: hidden;
   box-shadow: 0.1px 2px 8px lightgray;
 }
-
 
 
 .item-container3 .name {
@@ -504,6 +498,13 @@ p.Marseille {
 .odd {
   min-height: 140px;
 }
+
+.first{
+min-height: 215px;
+}
+ .second{
+min-height: 202px;
+ }
 
 .sub-item1-container3 {
   background: url(images/activites/4_small/activ-Marseille-vieux-port.jpg) no-repeat center;
@@ -568,7 +569,7 @@ footer ul {
 }
 
 
-/* Nouvelles règles si la fenêtre fait au plus 1024px de large */
+/* Nouvelles règles si la fenêtre fait au plus 10400px de large */
 @media screen and (max-width: 1400px) {
   .container3 {
     justify-content: space-evenly;
@@ -613,7 +614,7 @@ footer ul {
 
   i.fas.fa-search {
     display: flex;
-    background-color: #0065FC;
+    color: var(--bleu);
     padding-top: 10px;
     border-style: initial;
     border-radius: 12px;
