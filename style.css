@@ -106,7 +106,7 @@ h2 {
   padding: 9px;
   text-align: center;
   color: white;
-  background-color:  var(--bleu);
+  background-color: var(--bleu);
   border-style: initial;
   border-top-right-radius: 18px;
   border-bottom-right-radius: 18px;
@@ -228,7 +228,6 @@ i.fas.fa-dog {
   height: 20px;
   border: solid gray 2px;
   margin-top: 12px;
-
 }
 
 i.fas.fa-info {
@@ -252,7 +251,7 @@ main {
   flex-wrap: wrap;
   flex-direction: row-reverse;
   justify-content: space-around;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 aside {
@@ -277,25 +276,23 @@ aside {
   width: 64%;
 }
 
-
 i.fas.fa-star {
   color: var(--bleu);
   font-size: 13px;
 }
 
-p.fas.fa-star {
+.fas.fa-star.p {
   color: var(--gray);
   font-size: 13px;
-  margin-block-start: unset;
-  margin-block-end: unset;
 }
 
 .bloc-stars {
   padding-left: 12px;
 }
- .star{
-   padding-top: 10px;
- }
+
+.star {
+  padding-top: 10px;
+}
 
 .main-title-container1 {
   font-weight: bold;
@@ -401,13 +398,12 @@ p.Marseille {
   border-bottom-left-radius: 15px;
 }
 
-.location-img-desc{
+.location-img-desc {
   padding: 14px;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
 }
-
 
 .first-line {
   display: flex;
@@ -437,7 +433,7 @@ p.Marseille {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .main-title-container {
@@ -465,7 +461,6 @@ p.Marseille {
   overflow: hidden;
   box-shadow: 0.1px 2px 8px lightgray;
 }
-
 
 .item-container3 .name {
   height: 25px;
@@ -502,19 +497,20 @@ p.Marseille {
   min-height: 140px;
 }
 
-.first{
+.first {
   min-height: 250px;
 }
- .second{
+
+.second {
   min-height: 180px;
- }
+}
 
- .first .odd {
-    min-height: 175px 
- }
+.first .odd {
+  min-height: 175px
+}
 
- .second .odd {
-    min-height: 105px;
+.second .odd {
+  min-height: 105px;
 }
 
 .sub-item1-container3 {
@@ -598,19 +594,20 @@ footer ul {
     background-color: white;
   }
 
-  .first{
+  .first {
     min-height: 215px;
   }
-   .second{
+
+  .second {
     min-height: 215px;
-   }
-  
-   .first .odd {
-      min-height: 140px 
-   }
-  
-   .second .odd {
-      min-height: 140px;
+  }
+
+  .first .odd {
+    min-height: 140px
+  }
+
+  .second .odd {
+    min-height: 140px;
   }
 }
 
@@ -650,7 +647,7 @@ footer ul {
   }
 
   .research {
-   display: none;
+    display: none;
   }
 
 }
